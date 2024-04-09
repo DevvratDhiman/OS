@@ -1,0 +1,19 @@
+user mode means user can use some application to get access to something
+but all major accessability is present in kernel mode
+but the processor switches between both modes
+ 
+example we open text editor and write a code in it 
+this file will be saved in HDD OR SDD which is a hardware component of our system
+which is under control of our kernel so we cant direcrlt access it 
+
+(kernel mode is 0 bit and user mode is 1 bit)
+when we run a program it first does user process executing then it gets system
+call (different types of them exist) then it goes to kernel mode to access 
+what it requires ,here sy stem call is executed ,then system call is returned 
+to system call to give the output to the user
+
+but kernel access is only for certain program where we need to access some
+sort of resource under kernel like to print something on screen
+ 
+but to do simple calculations like 2+2 kernel is not needed
+

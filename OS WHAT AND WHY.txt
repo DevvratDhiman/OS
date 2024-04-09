@@ -1,0 +1,72 @@
+OS IS A SOFTWARE THAT PROVIDES INTERFACE BETWEEN USER AND HARDWARE
+HARD LIKE CPU,I/O DEVICES-keyboard etc,RAM 
+
+#if os did not exist
+we cant directly access the devices ,for that we need to write that certain specific
+that allows us to access that certain hardware 
+
+now in that sense we would have to write many programs many times for each time we 
+want to use that hardware which is a pain
+
+if we wanted to print something we could not print directly we would have to write
+programs each time
+
+for these few reasons we made os
+
+#primary functionality of OS-to provide a convenience and efficieny to the user
+convenience when we want to make stuff easier for us to do,like not having to
+write the same program again and again to do something
+
+windows used to have the highest convenience
+
+now problems started becoming very complex and user wanted them to be easy
+so we see throughput
+           throughput=no of task/time
+now we want an os with high throughput 
+now linux has a very high throughput as compared to windows 
+
+#funtionality of os- \
+1 RESOURCE MANAGEMENT-like in servers we can decide who can get what hardware
+or software using a certain type of os 
+like task manager also shows us what the os is managing
+specially used in parallel processing  as in windows its default but in parallel
+we can decide while working on the same data with multiple people who gets what
+
+2 process management-we open many programs at the same time,how what starts,what 
+memory it takes how it works so other programs can also work with ease without
+ any problems and taking care of all that 
+
+how it works??-cpu scheduling-we use various cpu schedulers to know when and how
+will that process work
+
+3 storage management-secondary devices like harddisk-how to manage/store all the
+data being put in the device and where and how to store it 
+done through file system -manages how data will be stored permanently
+
+4 memory management-RAM -ALL THE PROCESSES FIRST COME IN RAM,THEN WE GIVE THEM 
+TO CPU ONE BY ONE,THS OS NEEDS TO DECIDE HOW MUCH MEMORY TO GIVE TO WHAT PROGRAM
+AND TO TAKE THAT MEMORY BACK AFTER PROGRAM ENDS
+
+NOTE-MEMORY AND STORAGE MANAGEMENT ARE DIFFERENT BECAUSE RAM HAS SIZE CONSTRAINT
+WHEREAS HDD SDD HAS NO SIZE CONSTRAINTS ,WE NEED TO ALLOW CERTAIN PROGRAMS TO RUN
+FOR CERTAIN TIME IN RAM AND THEN END THEM,THIS IS RAM
+
+5 SECURITY AND PROVACY-EXAMPLE PASSWORD ,to secure our data ,windows uses kerberos
+security protocol, other than password like when some process gets cpu in the ram
+and takes some memory and tries to run some code out of its needed things like
+malware etc the antivirus can block it or the built in os privacy and security
+programs 
+
+
+LAST NOTE-NOW WHEN WE OPEN ANY FOLDER OR DO ANYTHING LIKE TRYING TO PRINT SOMETHING 
+USING PRINT FUNCTION IN ANYTHING LIKE ADOBE OR STRAIGHT IN THE PRINTER APPLICATION
+WE JUST DOUBLE CLICK OR PRESS ENTER BUT IN ACTUALITY WHAT WE ARE DOING ARE GIVING 
+SYSTEM CALLS IN THE OPERATING SYSTEM THROUGH APPLICATIONS WHICH THEN LET US ACCESS
+HARDWARE,SYSTEM CALLS ARE LIKE RIGHTS WHICH WE CAN HAVE TO USE HARDWARE
+LIKE WHEN WE OPEN A FOLDER WE USE THE OPEN SYSTEM CALL
+
+NOW WE CAN DURECTLY USE SHELL TO ACCESS THE SYSTEM OR KERNEL AND GIVE DIRECT 
+SYSTEM CALLS AND NOT THROUGH ANY APPLICATION
+
+
+USER->APPLICATION->OPERATING SYSTEM->HARDWARE

@@ -1,0 +1,37 @@
+TYPES OF OS-
+1 Batch-punch cards/paper tape/magnetic tapes on which jobs were offline loaded
+then we had to go to the system,those jobs were given to the operator,
+operator will make batches of them,those batches one by one are given to the cpu
+cpu will execute them ,in case the process asks for I/O then it sends it to its 
+required problem until then the cpu will remain idle which means it wont do anything
+else and will just wait for it to get I/O back and return which was a major problem 
+(it was non premptive) and wont go to the next job until current job is finished
+a lot of idle time builds up to complete all jobs which is annoying which can take
+even days or months 
+fortran was made to help a little while loading our jobs
+
+2 multi programmed-it is non premptive which means if process p1 is in ram and is
+taken to cpu ,cpu will execute it completely,until then other processes won't
+do anything,here cpu wont sit idle ,its puts more importance of letting process
+not stay idle
+
+3 multi tasking-it is premptive,we have already decided that some procesees will
+be executed for some time,if it dosent get completed in that certain time then
+we will go to another process and save process one for sometime later,it gives more
+emphasis on response time 
+
+we use multitasking in our pc 
+
+4 realtime-realtime means we are expected to not have time dealys and time matters
+  two types HARD-time is very restricted like in missile system  SOFT-time can be a little delayed
+
+            
+
+5 distributed-means our processing environment is distributed all over the world 
+or like our pc is all over the world and we can access them all and each one of them
+have their own environment and have resources and also they are geographically
+on diffferent places,in case one system faisl then work done can be through other
+systems
+6 clustered-same as distributed and are connected to the local network ,it has 
+availability and fail tolerance 
+7 embedded-only work on a fixed functionality,we cant do any changes to it,

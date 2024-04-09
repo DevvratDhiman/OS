@@ -1,0 +1,23 @@
+//WE KNOW WE ARE ACCESSING USER MODE AS WE WANT TO USE ANY APPLICATION 
+BUT IN CASE WE WANT TO ACCESS SOME FUNCTIONALITY THEN WE NEED KERNEL MODE
+
+TO GO TO KERNEL MODE WE USE SYSTEM CALL
+
+in some system we can directly use kernel system calls like linux 
+in some system we use api and local libraries like printf scanf but printf is not an system call ,these are all functions which access system calls 
+
+in the end system calls are invoked to do our work 
+
+SYSTEM CALL-
+1 FILE RELATED
+open(),read(),write(),close(),createfile-example whenever we write a c++ code and run it,it becomes a process and enters ram and our kernel is also in ram then if process wants to access a file it needs to invoke kernel system calls ,or create or open or write in a file ,any related to file 
+
+2 device related-read ,write,reposition,ioctl,fcntl-to access any devices ,we cant direct access them ,but we need privilage given by the system 
+
+3 information-getpid ,attrobutes,get system time and datat -whenever we want a meta data related to a data ,like the file name permission size etc and not the content of the file itself
+
+4 process control-load execute abort fork wait signal allocate 
+
+5 communication- pipe(), create delete connections,-these when 2 or more processes communicate with each other to do some work 
+
+6 security system calls-chmod 

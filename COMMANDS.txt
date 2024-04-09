@@ -1,0 +1,45 @@
+Man Su   --gives decription which tells us what this command does and the way to use it
+man is the main part whose work is to tell us the command working 
+
+su is used for switching user id
+
+to make new user id use-    sudo adduser username 
+
+who --tells whos logged in
+whoami
+
+uptime
+
+free
+
+cal
+
+uname
+
+tty
+
+date
+
+hostname
+
+clear
+
+reboot  
+
+cp     copy files from a destination
+
+mv              move files 
+
+rm
+
+which        similar to where but different 
+
+whereis
+
+whatis 
+
+CD .. TO GET OUT OF A DIRECTORY 
+DIFF TELLS DIFF BETWEEN FILES
+cmp   compares files 
+
+

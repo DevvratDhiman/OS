@@ -1,0 +1,15 @@
+fork is used to create a child process of the parent process 
+child process is usually made when parent process is busy and the child process is duplicate of parent but has different id registers and everything else is new 
+
+OR WE CAN USE THREADS IN WHICH WE DONT MAKE CLONES,EVERYTHING IS SHARED UNLIKE fork,ONLY A FEW NEW THINGS ARE NEW 
+
+fork returns +1 and 0 ,0 means child and +1 means parent 
+-1 is for when child process couldnt be made for some reason 
+
+
+fork processes are made in 2^n where 
+1 is parent and child processes are 2^n-1
+
+
+
+CHILD PROCESS ID RETURNS 0 WHEN FORK IS DONE AND PARENT RETURNS +1

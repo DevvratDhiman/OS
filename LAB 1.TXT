@@ -1,0 +1,89 @@
+MKDIR directoryname
+ls       gives list of files and folders(displayed in blue,files) ,output will be in green,text and essential are displayed,also shows newly created filed in white
+cd             to change directory or to access it 
+Pwd                    present working directory-shows current dir ,it also shows where the dir is located 
+touch                   to create a any form of file in the dir 
+vi file.type       or           nano file.type   opens an editor with the file,if these are written without the file then a blank file will open 
+cat file.type                   shows info of a file 
+
+
+
+
+
+
+ACCESS-- atime,MODIFY    mtime,change      ctime etc 
+ 
+
+STAT FILENAME.TYPE              SHOWS ALL DETAIL ABOUT THE FILE,MAINLY BIRTH DATE MODIFICATION ACCESS ETC 
+
+touch -a -t 202301181020.16  file name          touch to access file -a to change access -t for time first 4 numbers are year aka 2023 next 2 are months aka 01 and next 2 are date  ,next 2 are hours,next 2 are minutes ,.seconds 
+
+touch -m -t 202301181020.16  file name to change modify  
+
+
+if we rm filename   then file will be remove and then ls then it wont show anything as file is removed 
+rm dir to remove dir 
+
+
+gcc --version
+sudo apt update
+sudo apt install gcc 
+FUNCTIONS ARE ALSO IDENTIFIERS
+
+
+use gcc filename.type      to get it into the a.out section 
+./a.out               to run the files in a.out section 
+
+use #include <name>    <> is for predefined
+use #include ""         "" is used for user defined 
+
+
+-c is for compilation 
+-o if for output file
+makefile       to make a file that is different from normal.and only one exists in the whole folder ,dont give it any input 
+make to run the makefil
+
+
+
+
+
+
+
+make a folder using    mkdir 
+access the folder using     cd foldername
+create the file in folder using     touch    filename.file type
+create 4 files      test1    add    sub     mul     
+
+
+TEST.exe CONTAINS ALL THE EXECUTABLE CODE (test is just a name for makefile)
+makefile is used to identify errors easily
+to make .exe files and to not touch other files
+and we can run multiple files using makefile by make 
+
+BUT THE MAIN THING IT DOES IT RUNS HUNDREDS OF FILE ALTOGETHER TO RUN A LOT OF CODES TOGETHER THAT MIGHT OR MIGHT NOT DEPEND ON EACH OTHER
+
+
+
+fork is present under unistd.h library
+
+
+
+TO GET PROCESS ID WE GET   getpid() getppid() for process id as well as parent process id 
+
+
+
+
+VIVA-WE HAVE MULTIPLE SOURCE FILES(FILE CONTANINING SOURCE CODE IN PROGRAMMING LANUGAUGE) IN C C++ AND IF WE WANT TO COMPILE THEM WE HAVE TO MENTION THE NAME OF THE FILE EVERY TIME 
+EXAMPLE I HAVE CREATE ADD.C SUB.C MAIN.C,NOW IF I WANT TO COMPILE THEM
+THEN I NEED TO GCC THEM AND THWN ./a.out it 
+we need to mention the name every time and compile them each time whichj is a tidious task so we use makefile in large tasks or programs to save time
+now makefile is a is nothing but is a set of commands ,it will organise the code
+now example we create main.c and we do some printing and call two functions add(3,4) and hello()
+now both those function are then written separately in different files as add.c and hello.c with theur func names as the same
+NOTE TO USE THESE FUNCTIONS FROM DIFF FILES IN A SINGLE FILE WE CREATE THE HEADER FILE USING .h LIKE header.h in which we write the functions name only
+
+now after creating the main file where functions are used ,and function files and also a header files in which the functions are written we now need to makefile
+method 1 to use makefile
+//	NOTE USE TABS HERE NOT SPACES ,final: is just the destination name and -o allows us to change the name of the output file created by gcc
+final:
+	gcc	main.c	add.c	hello.c -o final
